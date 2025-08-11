@@ -1,0 +1,243 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+
+  .new-movies {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+  }
+
+  .new-movies-card {
+    background-color: #aaaaaa;
+    height: 140px;
+    width: 100px;
+    object-fit: cover;
+  }
+
+  .new-movies-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+  }
+
+  .new-movies-description {
+    font-size: 11px;
+    color: #aaaaaa;
+    overflow: hidden;
+    width: 60vw;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .new-movies-top {
+    display: flex;
+    gap: 20px;
+  }
+
+  .new-movies-star-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 11px;
+    color: #8e95a5;
+  }
+
+  .new-movies-quality {
+    font-weight: 700;
+    color: #8e95a5;
+    font-size: 11px;
+
+  }
+
+  .new-movies-title {
+    font-size: 14px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 60vw;
+  }
+
+  .watch-now {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-color: #404757ff;
+    padding: 7px 10px;
+    width: 110px;
+    border-radius: 3px;
+    font-size: 11px;
+  }
+
+  .wrapper {
+    margin: 0 17px;
+  }
+
+  .homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+
+  @media only screen and (min-width: 640px) {
+    .new-movies {
+        flex-direction: column;
+        width: 100%; 
+        margin-bottom: 60px;
+      
+    }
+    .new-movies:first-child {
+      flex-direction: column;
+      width: 31.21%
+    
+  }
+    .new-movies-card {
+        width: auto;
+        max-width: 100%;
+        height: 100%;
+    }
+    .wrapper {
+        display: flex;
+        gap: 20px;
+        margin: 10px;   
+    }
+    .new-movies-description {
+        width: inherit;
+        
+    }
+    .new-movies-title {
+        width: inherit
+    }
+   }
+
+   @media only screen and (min-width: 1000px) {
+    .new-movies {
+        flex-direction: row;
+        width: 100%;
+        position: relative;
+        text-overflow: ellipsis;
+    }
+    .new-movies-card {
+        display: block;
+        height: 140px;
+        width: 100px;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .new-movies-detail {
+        max-width: 200px;
+    }
+    .new-movies-title {
+        width: auto;
+    }
+   }
+
+   @media only screen and (min-width: 1000px) {
+    .new-movies {
+        flex-direction: row;
+        width: 28%;
+        position: relative;
+        text-overflow: ellipsis;
+        flex-direction: row;
+        width: 31.21%;
+        margin-right: 0;
+    }
+
+    .new-movies:first-child {
+      flex-direction: row;
+      width: 31.21%;
+      margin-right: 0;
+    }
+
+    .new-movies-card {
+        display: block;
+        height: 140px;
+        width: 100px;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap:10px;
+    }
+    .new-movies-detail {
+        max-width: 200px;
+    }
+   }
+
+   @media only screen and (min-width: 1200px) {
+    .App1 {
+        display: flex;
+        padding: 20px 10px;
+        justify-content: center;
+        width: 100%;
+        max-width: 1590%;
+        margin: 0 auto;
+    }
+    .wrapper {
+        flex-direction: column;
+        background-color: #292d38ff;
+        background: linear-gradient(to bottom, rgba(41, 45, 56, 1.0) 10%, transparent 100%);
+        margin:0;
+        padding: 20px 20px 0 20px;
+    }
+    .carousel {
+      width: 810px;;
+      position: relative;
+    }
+    .new-movies {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+
+    .new-movies-card {
+      display: block;
+      height: 140px;
+      width: 100px;
+  }
+
+    .new-movies:first-child {
+      width: auto;
+    }
+
+    .new-movies-detail {
+        width: auto;
+    }
+   }
+
+   @media only screen and (min-width: 1400px) {
+    .carousel {
+      width: 900px;;
+      position: relative;
+    }
+
+   }
+
+   @media only screen and (min-width: 1500px) {
+    .carousel {
+      width: 1000px;;
+      position: relative;
+    }
+
+   }
+
+   @media only screen and (min-width: 1590px) {
+    .carousel {
+      width: 1120px;;
+      position: relative;
+    }
+
+   }
